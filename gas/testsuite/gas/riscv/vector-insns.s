@@ -2092,18 +2092,18 @@
 	vwredsum.vs v4, v8, v12, v0.t
 
 	vfredosum.vs v4, v8, v12
-	vfredsum.vs v4, v8, v12
+	vfredusum.vs v4, v8, v12
 	vfredmax.vs v4, v8, v12
 	vfredmin.vs v4, v8, v12
 	vfredosum.vs v4, v8, v12, v0.t
-	vfredsum.vs v4, v8, v12, v0.t
+	vfredusum.vs v4, v8, v12, v0.t
 	vfredmax.vs v4, v8, v12, v0.t
 	vfredmin.vs v4, v8, v12, v0.t
 
 	vfwredosum.vs v4, v8, v12
-	vfwredsum.vs v4, v8, v12
+	vfwredusum.vs v4, v8, v12
 	vfwredosum.vs v4, v8, v12, v0.t
-	vfwredsum.vs v4, v8, v12, v0.t
+	vfwredusum.vs v4, v8, v12, v0.t
 
 	# Aliases
 	vmcpy.m v4, v8

@@ -1955,12 +1955,12 @@ const struct riscv_opcode riscv_opcodes[] =
 {"vwredsum.vs",0, INSN_CLASS_V, "Vd,Vt,VsVm", MATCH_VWREDSUMVS, MASK_VWREDSUMVS, match_opcode, 0},
 
 {"vfredosum.vs",0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFREDOSUMVS, MASK_VFREDOSUMVS, match_opcode, 0},
-{"vfredsum.vs", 0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFREDSUMVS, MASK_VFREDSUMVS, match_opcode, 0},
+{"vfredusum.vs",0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFREDUSUMVS, MASK_VFREDUSUMVS, match_opcode, 0},
 {"vfredmax.vs", 0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFREDMAXVS, MASK_VFREDMAXVS, match_opcode, 0},
 {"vfredmin.vs", 0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFREDMINVS, MASK_VFREDMINVS, match_opcode, 0},
 
 {"vfwredosum.vs",0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFWREDOSUMVS, MASK_VFWREDOSUMVS, match_opcode, 0},
-{"vfwredsum.vs", 0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFWREDSUMVS, MASK_VFWREDSUMVS, match_opcode, 0},
+{"vfwredusum.vs",0, INSN_CLASS_V_AND_F, "Vd,Vt,VsVm", MATCH_VFWREDUSUMVS, MASK_VFWREDUSUMVS, match_opcode, 0},
 
 {"vmmv.m",     0, INSN_CLASS_V, "Vd,Vu", MATCH_VMANDMM, MASK_VMANDMM, match_vs1_eq_vs2, INSN_ALIAS},
 {"vmcpy.m",    0, INSN_CLASS_V, "Vd,Vu", MATCH_VMANDMM, MASK_VMANDMM, match_vs1_eq_vs2, INSN_ALIAS},

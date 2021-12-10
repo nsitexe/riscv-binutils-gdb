@@ -1646,7 +1646,7 @@ rs1
 VFLOAT
 funct6
 000000 vfadd
-000001 vfredsum
+000001 vfredusum
 000010 vfsub
 000011 vfredosum
 000100 vfmin
@@ -1694,7 +1694,7 @@ funct6
 101110 vfmsac
 101111 vfnmsac
 110000 vfwadd
-110001 vfwredsum
+110001 vfwredusum
 110010 vfwsub
 110011 vfwredosum
 110100 vfwadd.w
@@ -2364,8 +2364,8 @@ funct6 VM  VS2  VS1/RS1/IMM funct3 VD   opcode
 
 #define MATCH_VFREDOSUMVS 0x0c001057
 #define MASK_VFREDOSUMVS  0xfc00707f
-#define MATCH_VFREDSUMVS  0x04001057
-#define MASK_VFREDSUMVS   0xfc00707f
+#define MATCH_VFREDUSUMVS 0x04001057
+#define MASK_VFREDUSUMVS  0xfc00707f
 #define MATCH_VFREDMAXVS  0x1c001057
 #define MASK_VFREDMAXVS   0xfc00707f
 #define MATCH_VFREDMINVS  0x14001057
@@ -2373,8 +2373,8 @@ funct6 VM  VS2  VS1/RS1/IMM funct3 VD   opcode
 
 #define MATCH_VFWREDOSUMVS 0xcc001057
 #define MASK_VFWREDOSUMVS  0xfc00707f
-#define MATCH_VFWREDSUMVS  0xc4001057
-#define MASK_VFWREDSUMVS   0xfc00707f
+#define MATCH_VFWREDUSUMVS 0xc4001057
+#define MASK_VFWREDUSUMVS  0xfc00707f
 
 #define MATCH_VMANDMM    0x66002057
 #define MASK_VMANDMM     0xfe00707f
