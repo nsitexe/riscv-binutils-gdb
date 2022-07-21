@@ -20,7 +20,6 @@ if test "x${PROJ}" = "x"; then
 fi
 if test "x${PROJ_ORG}" = "x"; then
 	PROJ_ORG=${PROJ}
-	exit 1
 fi
 if test "x${VER}" = "x"; then
 	echo "Please set VER"
@@ -51,8 +50,9 @@ mv ${PROJ_ORG}-${VER}/* ./
 rmdir ${PROJ_ORG}-${VER}
 
 # Copy debian, remove CI files
+rm -rf ./debian
 cp -a ../../${DEBIAN} ./debian
-#rm -rf .github pkg_script
+rm -rf .github debian_* pkg_script
 
 # For nightly
 if [ x${SECT} = "xnightly" ]; then
