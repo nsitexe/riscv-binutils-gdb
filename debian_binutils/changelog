@@ -2,6 +2,7 @@ riscv64-binutils (2.38-2) stable; urgency=medium
 
   * binutils-2.38
   * Add linux tools
+  * Add Zicbom opcodes
 
  -- Katsuhiro Suzuki <katsuhiro_suzuki@nsitexe.co.jp>  Fri, 29 Jul 2022 00:00:00 +0000
 
